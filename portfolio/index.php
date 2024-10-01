@@ -13,12 +13,12 @@ $youtubeProfilePic = $result['items'][0]['snippet']['thumbnails']['medium']['url
 $channelName= $result['items'][0]['snippet']['title'];
 $subscriber= $result['items'][0]['statistics']['subscriberCount'];
 
-$urlLatestVideo = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyDwDL62m_LAMZPb2kBvjOzPVcRos06ujVM&part=snippet&channelId=UCXkCLJH7uwNeD44LoaXIDtA&order=date&maxResults=1';
+$urlLatestVideo = '';
 $result = get_CURL($urlLatestVideo);
 $urlLatestVideoId = $result['items'][0]['id']['videoId'];
 $urlLatestVideoIdName = $result['items'][0]['snippet']['title'];
 
-$urlViewCountVideo = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyDwDL62m_LAMZPb2kBvjOzPVcRos06ujVM&part=snippet&channelId=UCXkCLJH7uwNeD44LoaXIDtA&order=viewCount&maxResults=1';
+$urlViewCountVideo = '';
 $result = get_CURL($urlViewCountVideo);
 $urlViewCountVideoId = $result['items'][0]['id']['videoId'];
 $urlViewCountVideoIdName = $result['items'][0]['snippet']['title'];
